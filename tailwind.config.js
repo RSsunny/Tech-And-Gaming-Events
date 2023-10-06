@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        babas:["'Bebas Neue', sans-serif"],
+        press:["'Press Start 2P', cursive"],
+        robato:["'Roboto', sans-serif"]  
+      },
+      colors:{
+        primary:'#FFB428',
+        secondary:"#C70707",
+        tertiary:"#000000"
+      }
+
+    },
+ 
   },
   plugins: [require("daisyui")],
 }
