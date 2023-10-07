@@ -5,13 +5,24 @@ import { GiBoltEye,GiBeastEye } from "react-icons/gi";
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
+import useAuth from "../../../Hooks/useAuth";
+
 const Register = () => {
     const [show,setShow]=useState(false)
+    const {createUser}=useAuth()
     const handleLogin=e=>{
+        e.preventDefault()
         const form=new FormData(e.currentTarget)
         const email=form.get('email')
         const password=form.get('password')
         console.log(email,password)
+        createUser(email,password)
+            .then(result=>{
+                console.log(result.user);
+            })
+            .catch(error=>{
+                console.log(error);
+            })
     }
     return (
         <div className=" w-full h-screen flex justify-center items-center bg-center bg-cover" style={{backgroundImage:`url("${bgregister}")`}} >

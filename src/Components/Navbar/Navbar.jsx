@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png"
+import useAuth from "../../Hooks/useAuth";
+import { BiSolidUser } from "react-icons/bi";
 
 const Navbar = () => {
+    const {user}=useAuth()
+    
     const navList=<>
         <li>
             <NavLink
@@ -62,9 +66,16 @@ const Navbar = () => {
                 <img className="w-20" src={logo} alt="" />
                 <h1 className="font-babas text-xl md:text-2xl lg:text-4xl "><span className="text-primary">Game</span> On <span className="text-primary">Glaxy</span></h1>
                 </div>
+                {
+                user? <label tabIndex={0} className="btn btn-ghost btn-circle avatar  md:hidden ml-10">
+                   <div className="w-12 rounded-full">
+                     <Link to={'/profile'}>{user.photoURL?<img src={user.photoURL} />:<BiSolidUser className="text-4xl text-primary"></BiSolidUser>}</Link>
+                   </div>
+                </label>:
                 <div className=" md:hidden border px-5 py-2 rounded-full text-primary shadow-md ml-5">
                     <Link to={'/login'}>Login </Link>  
                 </div>
+                }
             </div>
             <ul className="flex gap-5 text-xl font-semibold ">
                 {
@@ -72,10 +83,20 @@ const Navbar = () => {
                 }
             </ul>
             <div >
-                <div className="hidden md:flex gap-3 border px-5 py-2 rounded-full text-primary shadow-md bg-black bg-opacity-30">
+                {
+                   user?
+                   <label tabIndex={0} className="btn btn-ghost btn-circle avatar hidden md:block">
+                   <div className="w-full rounded-full">
+                     <Link to={'/profile'}>{user.photoURL?<img src={user.photoURL} />:<BiSolidUser className="text-5xl text-primary"></BiSolidUser>}</Link>
+                   </div>
+                    </label>
+                   :
+                    <div className="hidden md:flex gap-3 border px-5 py-2 rounded-full text-primary shadow-md bg-black bg-opacity-30">
                     <Link to={'/login'}>Login </Link>
                     <Link to={'/register'}> Register</Link>
-                </div>
+                    </div>
+                }
+                
             </div>
         </div>
         </div>

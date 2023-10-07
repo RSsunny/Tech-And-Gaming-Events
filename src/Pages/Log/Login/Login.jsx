@@ -7,13 +7,30 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa6";
 import { BsFacebook } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import useAuth from "../../../Hooks/useAuth";
 const Login = () => {
+    
     const [show,setShow]=useState(false)
+    const {loginMedia,signIn}=useAuth()
     const handleLogin=e=>{
-        const form=new FormData(e.currentTarget)
+        e.preventDefault()
+        const form= new FormData(e.currentTarget)
         const email=form.get('email')
         const password=form.get('password')
         console.log(email,password)
+        signIn(email,password)
+        .then(result=>{
+            console.log(result.user);
+          })
+          .catch()
+    }
+
+    const handleMedia=(media)=>{
+            media()
+                .then(result=>{
+                    console.log(result.user);
+                })
+                .catch()
     }
     return (
         <div className=" w-full h-screen flex justify-center items-center bg-center bg-cover" style={{backgroundImage:`url("${bgLogin}")`}} >
@@ -50,7 +67,7 @@ const Login = () => {
 
                         <div className="flex justify-center items-center mt-5 gap-5 text-xl">
                                 <BsFacebook  className="hover:scale-125 cursor-pointer duration-200"></BsFacebook>
-                                <FcGoogle className="hover:scale-125 cursor-pointer duration-200"></FcGoogle>
+                                <FcGoogle onClick={()=>handleMedia(loginMedia)} className="hover:scale-125 cursor-pointer duration-200"></FcGoogle>
                                 <FaGithub className="hover:scale-125 cursor-pointer duration-200"></FaGithub>
                         </div>
                         <h1 className="mt-3 md:mt-5 text-xs md:text-base">You have an account? <Link to={'/register'} className="text-red-500 font-bold">Register</Link></h1>
