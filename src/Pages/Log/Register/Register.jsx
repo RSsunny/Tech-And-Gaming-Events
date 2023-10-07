@@ -6,19 +6,41 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
     const [show,setShow]=useState(false)
     const {createUser}=useAuth()
+    const [error,setError]=useState('')
+    const [success,setSuccess]=useState('')
     const handleLogin=e=>{
         e.preventDefault()
         const form=new FormData(e.currentTarget)
+        const name=form.get('name')
         const email=form.get('email')
         const password=form.get('password')
         console.log(email,password)
+        setError('')
+        setSuccess('')
+        if(password.length<6){
+            setError('Password must be at least 6 characters')
+            return
+        }else if(! /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)){
+            setError('Password must contain at least one number, uppercase, lowercase' )
+            return
+        }else{
+            setSuccess('Login successful')
+        }
         createUser(email,password)
             .then(result=>{
                 console.log(result.user);
+                updateProfile(result.user,{
+                    displayName : name
+                    
+                })
+                .then()
+                .catch()
+                setSuccess('account successfully created')
             })
             .catch(error=>{
                 console.log(error);
@@ -30,18 +52,18 @@ const Register = () => {
                 <div className=" z-10 absolute bg-[#0c1022] rounded-tl-[50px] rounded-tr-[5px] rounded-br-[50px] rounded-bl-[5px] text-primary inset-1 flex justify-center items-center">
                     <form onSubmit={handleLogin}>
                         <h1 className="text-xl md:text-4xl font-bold font-robato text-center md:mb-5 ">Register</h1>
-                        <input className="outline-none w-[250px] md:w-[300px] border-b-[1px] border-b-primary md:pr-6 bg-transparent py-1 text-primary" placeholder="your name" type="text" name="name" id="05" />
+                        <input className="outline-none w-[250px] md:w-[300px] border-b-[1px] border-b-primary md:pr-6 bg-transparent py-1 text-primary" placeholder="your name" type="text" name="name" id="05" required />
                         <div className=" relative flex justify-center items-center mt-5 md:mt-10 mb-5 
                         ">
 
-                            <input className="outline-none w-[250px] md:w-[300px] border-b-[1px] border-b-primary md:pr-6 bg-transparent py-2 text-primary" autoComplete="off" type="email" name="email" id="01" placeholder="inter your email"/>
+                            <input className="outline-none w-[250px] md:w-[300px] border-b-[1px] border-b-primary md:pr-6 bg-transparent py-2 text-primary" autoComplete="off" type="email" name="email" id="01" placeholder="inter your email" required/>
                             <MdOutlineMarkEmailRead className="absolute right-0 top-3"></MdOutlineMarkEmailRead>
 
                         </div>
                         <div className=" relative flex justify-center items-center md:mt-10 mb-5 
                         ">
 
-                            <input className="outline-none w-full border-b-[1px] border-b-primary md:pr-6 bg-transparent py-2 text-primary" autoComplete="off" type={show?"text":"password"} name="password" id="02" placeholder=" password"/>
+                            <input className="outline-none w-full border-b-[1px] border-b-primary md:pr-6 bg-transparent py-2 text-primary" autoComplete="off" type={show?"text":"password"} name="password" id="02" placeholder=" password" required/>
                             <div onClick={()=>setShow(!show)} className="absolute right-0 top-3">
                                 {
                                     show?<GiBeastEye ></GiBeastEye>:<GiBoltEye></GiBoltEye>
@@ -52,12 +74,17 @@ const Register = () => {
                         <div className=" relative flex justify-center items-center md:mt-10  mb-5 
                         ">
 
-                            <input className="outline-none w-full border-b-[1px] border-b-primary md:pr-6 bg-transparent py-2 text-primary" autoComplete="off" type={show?"text":"password"} name="password" id="07" placeholder="confrim password"/>
+                            <input className="outline-none w-full border-b-[1px] border-b-primary md:pr-6 bg-transparent py-2 text-primary" autoComplete="off" type={show?"text":"password"} name="password" id="07" placeholder="confrim password" required/>
                         </div>
                         
-                        <input className="w-full border py-1 md:py-3 rounded-full md:mt-5 border-primary font-bold" type="submit" value="Register" />
+                        <input className="w-full border py-1 md:py-3 rounded-full md:mt-5 border-primary font-bold cursor-pointer" type="submit" value="Register" />
                         <h1 className="md:mt-5 mt-2 text-xs md:text-base">You have an account? <Link to={'/login'} className="text-green-500 font-bold">Login</Link></h1>
-                        
+                        {
+                            error&& <p className="text-xs text-red-500 mt-2">{error}</p>
+                        }
+                        {
+                            success&& <p className="text-xs text-green-500 mt-2">{success}</p>
+                        }
                     </form>
 
                 </div>

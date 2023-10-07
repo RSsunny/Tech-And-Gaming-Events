@@ -11,6 +11,8 @@ import useAuth from "../../../Hooks/useAuth";
 const Login = () => {
     
     const [show,setShow]=useState(false)
+    const [error,setError]=useState('')
+    const [success,setSuccess]=useState('')
     const {loginMedia,signIn}=useAuth()
     const handleLogin=e=>{
         e.preventDefault()
@@ -18,17 +20,28 @@ const Login = () => {
         const email=form.get('email')
         const password=form.get('password')
         console.log(email,password)
+        setError('')
+        setSuccess('')
+        if(email)
         signIn(email,password)
         .then(result=>{
             console.log(result.user);
+            setError('')
+            setSuccess('login success full')
           })
-          .catch()
+          .catch((error)=>{
+            console.log(error);
+            setSuccess('')
+            setError('password does not match')
+          })
     }
 
     const handleMedia=(media)=>{
             media()
                 .then(result=>{
                     console.log(result.user);
+                    setError('')
+                    setSuccess('login success full')
                 })
                 .catch()
     }
@@ -71,6 +84,13 @@ const Login = () => {
                                 <FaGithub className="hover:scale-125 cursor-pointer duration-200"></FaGithub>
                         </div>
                         <h1 className="mt-3 md:mt-5 text-xs md:text-base">You have an account? <Link to={'/register'} className="text-red-500 font-bold">Register</Link></h1>
+
+                        {
+                            error&& <p className="text-xs text-red-500 mt-2">{error}</p>
+                        }
+                        {
+                            success&&<p className="text-xs text-green-500 mt-2">{success}</p>
+                        }
                     </form>
 
                 </div>

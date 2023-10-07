@@ -77,7 +77,7 @@ const Navbar = () => {
                 </div>
                 }
             </div>
-            <ul className="flex gap-3 lg:gap-5 text-xl font-semibold ">
+            <ul className="flex gap-2 lg:gap-5 text-xl font-semibold ">
                 {
                     navList
                 }

@@ -5,16 +5,19 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyA89RVGJFPkPpNlYOy_XxDQOaQIqlzgFcA",
-  authDomain: "gaming-events-58368.firebaseapp.com",
-  projectId: "gaming-events-58368",
-  storageBucket: "gaming-events-58368.appspot.com",
-  messagingSenderId: "933970813143",
-  appId: "1:933970813143:web:3a91261be7e09d12499092"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_STORAGEBUCKET,
+  appId:import.meta.env.VITE_APPID   
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 export default auth;
+
+
