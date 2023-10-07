@@ -54,14 +54,17 @@ const Navbar = () => {
             </NavLink>
         </li>
 </>
-
-
-
-    return (
-        <div className="flex justify-between items-center font-semibold font-babas max-w-7xl mx-auto p-5">
-            <div className="flex items-center gap-3 ">
+    return ( 
+         <div className="flex  justify-center">
+            <div className="flex flex-col md:flex-row justify-between items-center font-semibold font-babas max-w-7xl absolute w-full  p-5 z-40  mx-auto text-white gap-5 md:gap-0">
+            <div className="flex items-center gap-1 lg:gap-3  ">
+                <div className="flex items-center gap-1 lg:gap-3">
                 <img className="w-20" src={logo} alt="" />
-                <h1 className="font-babas text-4xl "><span className="text-primary">Game</span> On <span className="text-primary">Glaxy</span></h1>
+                <h1 className="font-babas text-xl md:text-2xl lg:text-4xl "><span className="text-primary">Game</span> On <span className="text-primary">Glaxy</span></h1>
+                </div>
+                <div className=" md:hidden border px-5 py-2 rounded-full text-primary shadow-md ml-5">
+                    <Link to={'/login'}>Login </Link>  
+                </div>
             </div>
             <ul className="flex gap-5 text-xl font-semibold ">
                 {
@@ -69,12 +72,14 @@ const Navbar = () => {
                 }
             </ul>
             <div >
-                <div className="flex gap-3 border px-5 py-2 rounded-full bg-primary">
+                <div className="hidden md:flex gap-3 border px-5 py-2 rounded-full text-primary shadow-md bg-black bg-opacity-30">
                     <Link to={'/login'}>Login </Link>
                     <Link to={'/register'}> Register</Link>
                 </div>
             </div>
         </div>
+        </div>
+      
     );
 };
 

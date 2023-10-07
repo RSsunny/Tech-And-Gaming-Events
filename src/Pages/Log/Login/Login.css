@@ -1,0 +1,27 @@
+.input-container::before{
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient( red,orange,yellow ,green , blue);
+    animation: rotate-border 1s infinite;
+}
+
+.ininput-container::after{
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient( red,orange,yellow ,green , blue);
+    animation : rotate-border  2s infinite;
+    animation-delay: -3s;
+}
+
+@keyframes rotate-border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
