@@ -1,6 +1,6 @@
 import useAuth from "../../Hooks/useAuth";
 import Navbar from "../Navbar/Navbar";
-import bgprofile from "../../assets/game-7.jpg"
+import bgprofile from "../../assets/game4.jpg"
 import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
@@ -25,12 +25,12 @@ const Profile = () => {
                         <img className="rounded-full mx-auto" src={user?.photoURL} alt="" />
                         <h1 className="text-xl font-babas  text-center">{user?.displayName}</h1>
                         <p className="text-sm text-center">{user?.email}</p>
-                    <div className=" md:absolute bottom-4 w-full mx-auto text-center">
-                        <button onClick={handleLogout} className=" p-2 bg-primary rounded  mx-auto text-center px-5 w-32 md:mr-8">logout</button>
+                    <div className=" md:absolute bottom-4 w-full mx-auto text-center ">
+                        <button onClick={handleLogout} className=" p-2 bg-t rounded  mx-auto text-center px-5 w-32 md:mr-8 bg-secondary">logout</button>
                     </div>
                     </div>
                     <div className="md:flex-1 md:h-[600px] bg-gray-400 bg-opacity-20 p-5 text-white space-y-2 rounded-xl w-full">
-                        <h1 className="text-3xl font-robato text-primary">My Profile</h1>
+                        <h1 className="text-3xl font-babas text-secondary">My Profile</h1>
                     </div>
                 </div>
             

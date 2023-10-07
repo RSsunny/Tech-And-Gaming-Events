@@ -60,7 +60,7 @@ const Navbar = () => {
 </>
     return ( 
          <div className="flex  justify-center">
-            <div className="flex flex-col md:flex-row justify-between items-center font-semibold font-babas max-w-7xl absolute w-full  p-5 z-40  mx-auto text-white gap-5 md:gap-0">
+            <div className="flex flex-col md:flex-row justify-between items-center font-semibold font-robato max-w-7xl absolute w-full  p-5 z-40  mx-auto text-white gap-5 md:gap-0">
             <div className="flex items-center gap-1 lg:gap-3  ">
                 <div className="flex items-center gap-1 lg:gap-3">
                 <img className="w-20" src={logo} alt="" />
@@ -77,7 +77,7 @@ const Navbar = () => {
                 </div>
                 }
             </div>
-            <ul className="flex gap-5 text-xl font-semibold ">
+            <ul className="flex gap-3 lg:gap-5 text-xl font-semibold ">
                 {
                     navList
                 }
