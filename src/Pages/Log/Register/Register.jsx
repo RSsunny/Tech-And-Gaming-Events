@@ -4,7 +4,7 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { GiBoltEye,GiBeastEye } from "react-icons/gi";
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import { updateProfile } from "firebase/auth";
 
@@ -13,6 +13,8 @@ const Register = () => {
     const {createUser}=useAuth()
     const [error,setError]=useState('')
     const [success,setSuccess]=useState('')
+    const navigate=useNavigate()
+    const location=useLocation()
     const handleLogin=e=>{
         e.preventDefault()
         const form=new FormData(e.currentTarget)
@@ -33,7 +35,7 @@ const Register = () => {
         }
         createUser(email,password)
             .then(result=>{
-                console.log(result.user);
+               
                 updateProfile(result.user,{
                     displayName : name
                     
@@ -41,6 +43,7 @@ const Register = () => {
                 .then()
                 .catch()
                 setSuccess('account successfully created')
+                navigate(location?.state? location.state: '/')
             })
             .catch(error=>{
                 console.log(error);

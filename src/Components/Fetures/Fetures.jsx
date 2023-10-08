@@ -6,6 +6,7 @@ import Feature4 from "./Feature4";
 import Feature5 from "./Feature5";
 import Feature6 from "./Feature6";
 import PropTypes from 'prop-types';
+import bgcover from '../../assets/bg1.jpg'
 
 const Fetures = ({events}) => {
     
@@ -13,10 +14,10 @@ const Fetures = ({events}) => {
         titleHead:'Tech Conferences and Expos',
         titleDescription:" You can have the chance to talk to them directly and learn more about the way they work, their benefits, and their expectations."
     }
-    const title2={
-        titleHead:'Exhibitions',
-        titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
-    }
+    // const title2={
+    //     titleHead:'Exhibitions',
+    //     titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
+    // }
     const title3={
         titleHead:'Tournaments',
         titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
@@ -31,13 +32,15 @@ const Fetures = ({events}) => {
             <Title title={title4}></Title>
             <Feature5 events={events}></Feature5>
 
+            <div className="bg-cover bg-center" style={{backgroundImage:`url("${bgcover}")`}}>
+                
+                <Title title={title1}></Title>
+                <Feature1></Feature1>
 
-            <Title title={title1}></Title>
-            <Feature1></Feature1>
 
-
-            <Title title={title2}></Title>
-            <Feature2></Feature2>
+                {/* <Title title={title2}></Title> */}
+                <Feature2></Feature2>
+            </div>
 
 
             
@@ -66,5 +69,5 @@ const Fetures = ({events}) => {
 export default Fetures;
 
 Fetures.propTypes = {
-    events:PropTypes.array.isRequired
+    events:PropTypes.array
 }

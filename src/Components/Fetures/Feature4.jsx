@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import image41 from "../../assets/gmae2.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import bgcover2 from "../../assets/bg3.jpg"
 const Feature4 = () => {
     useEffect(() => {
         AOS.init({
@@ -11,7 +11,7 @@ const Feature4 = () => {
         });
     },[]);
     return (
-        <div className="relative bg-center bg-cover h-[400px] max-w-7xl mx-auto " style={{backgroundImage:`url("${image41}")`}}>
+        <div className="relative bg-center bg-cover h-[400px] max-w-7xl mx-auto " style={{backgroundImage:`url("${bgcover2}")`}}>
             <div className="absolute inset-0  duration-500 bottom-0  bg-secondary opacity-20 flex justify-center items-center ">
                 
             </div>

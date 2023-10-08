@@ -8,7 +8,7 @@ const Event = () => {
     const id=useParams()
     const matchCard=events?.find(event => event.id==id.id)
     const {image ,event_name,place,date,rules,price,description,team_member    }=matchCard
-    console.log(matchCard);
+   
     const sortdiscrip=description.slice(0,100)
 
     useEffect(()=>{

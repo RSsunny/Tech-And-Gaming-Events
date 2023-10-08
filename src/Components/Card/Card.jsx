@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import useAuth from "../../Hooks/useAuth";
 const Card = ({eventCard}) => {
-
+    const {user}=useAuth()
     const {id,image ,event_name,place,date,rules,price
     }=eventCard;
+    
 
     useEffect(()=>{
         AOS.init({
@@ -41,7 +43,7 @@ const Card = ({eventCard}) => {
                 {place}</p>
                 <p className="mb-10">{date}</p>
                 <div className="absolute bottom-5 border px-4 py-2 rounded-full cursor-pointer text-xs hover:bg-secondary hover:bg-opacity-60 duration-500 ease-linear">
-                <Link to={`/event/${id}`}>Join this Event {price}</Link>
+                <Link to={user ?`/event/${id}`:'/login'} state={`/event/${id}`}>Join this Event {price}</Link>
                 </div>
                 </div>
                 

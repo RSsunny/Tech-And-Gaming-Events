@@ -8,6 +8,7 @@ import Profile from "../Components/Profile/Profile";
 import Service from "../Pages/Service/Service";
 import Games from "../Pages/Games/Games";
 import Event from "../Pages/Events/Event";
+import Privetroute from "../Privet-Route/Privetroute";
 
 
 const Router = createBrowserRouter([
@@ -44,7 +45,7 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/event/:id',
-                element:<Event></Event>,
+                element:<Privetroute><Event></Event></Privetroute>,
                 loader:()=>fetch('/services.json')
             }
             

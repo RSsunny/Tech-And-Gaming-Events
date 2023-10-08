@@ -6,14 +6,18 @@ import { useRef, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa6";
 import { BsFacebook } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import Swal from "sweetalert2";
 const Login = () => {
     
     const [show,setShow]=useState(false)
     const [error,setError]=useState('')
     const [success,setSuccess]=useState('')
     const {loginMedia,signIn,passwordReset}=useAuth()
+    const location=useLocation()
+    const navigate=useNavigate()
+   
     const emailRef=useRef()
     const handleLogin=e=>{
         e.preventDefault()
@@ -29,6 +33,7 @@ const Login = () => {
             console.log(result.user);
             setError('')
             setSuccess('login success full')
+            navigate(location?.state? location.state: '/')
           })
           .catch((error)=>{
             console.log(error);
@@ -39,10 +44,17 @@ const Login = () => {
 
     const handleMedia=(media)=>{
             media()
-                .then(result=>{
-                    console.log(result.user);
+                .then(()=>{ 
                     setError('')
                     setSuccess('login success full')
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Login success',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                    navigate(location?.state? location.state: '/')
                 })
                 .catch()
     }
@@ -53,7 +65,14 @@ const Login = () => {
         if(email){
             passwordReset(email)
                 .then(()=>{
-                    alert('check email')
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'check email',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                    
                 })
                 .catch()
         }
@@ -96,7 +115,7 @@ const Login = () => {
                                 <FcGoogle onClick={()=>handleMedia(loginMedia)} className="hover:scale-125 cursor-pointer duration-200"></FcGoogle>
                                 <FaGithub className="hover:scale-125 cursor-pointer duration-200"></FaGithub>
                         </div>
-                        <h1 className="mt-3 md:mt-5 text-xs md:text-base">You have an account? <Link to={'/register'} className="text-red-500 font-bold">Register</Link></h1>
+                        <h1 className="mt-3 md:mt-5 text-xs md:text-base">You have an account? <Link to={'/register'} state={location.state} className="text-red-500 font-bold">Register</Link></h1>
 
                         {
                             error&& <p className="text-xs text-red-500 mt-2">{error}</p>
