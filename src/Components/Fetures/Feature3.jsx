@@ -2,7 +2,13 @@ import img1 from "../../assets/game-7.jpg"
 import img2 from "../../assets/game4.jpg"
 import img3 from "../../assets/game6.jpg"
 import { AiOutlineStar,AiFillHeart } from "react-icons/ai";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const Feature3 = () => {
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+    },[])
     return (
         <>
         <div className="text-center mt-20">
@@ -11,7 +17,7 @@ const Feature3 = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto px-5 my-10 ">
-            <div>
+            <div data-aos ="fade-right" data-aos-mirror="true" data-aos-delay="100" >
                 <div className="relative bg-gray-400 bg-opacity-10 cursor-pointer hover:scale-110 duration-500">
                     <div className="overflow-hidden">
                     <img className="hover:scale-125 duration-500 " src={img1} alt="" />
@@ -27,7 +33,7 @@ const Feature3 = () => {
 
                 </div>
             </div>
-            <div>
+            <div data-aos ="fade-up" data-aos-mirror="true" data-aos-delay="100">
                 <div className="relative bg-gray-400 bg-opacity-10 cursor-pointer hover:scale-110 duration-500">
                     <div className="overflow-hidden">
                     <img className="hover:scale-125 duration-500 " src={img3} alt="" />
@@ -43,7 +49,7 @@ const Feature3 = () => {
 
                 </div>
             </div>
-            <div>
+            <div data-aos ="fade-left" data-aos-mirror="true" data-aos-delay="100">
                 <div className="relative bg-gray-400 bg-opacity-10 cursor-pointer hover:scale-110 duration-500">
                     <div className="overflow-hidden">
                     <img className="hover:scale-125 duration-500 " src={img2} alt="" />

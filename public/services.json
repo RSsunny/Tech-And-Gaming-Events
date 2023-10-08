@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "event_name": "Summer Gaming Showdown",
+      "image": "https://i.ibb.co/wdk0tKH/card1.jpg",
+      "description": "The Summer Gaming Showdown is the ultimate First-Person Shooter (FPS) Tournament that will test your shooting skills and tactical prowess. Join gamers from around the world in this adrenaline-packed event. Compete in a variety of FPS games and prove your mettle on the virtual battlefield. Whether you're a seasoned FPS pro or just getting started, this tournament offers something for everyone. With a prize pool of $50,000, the stakes are high, and the glory awaits the victors. Don't miss out on this opportunity to showcase your skills, make new friends, and experience the thrill of competitive gaming. Grab your weapons, gear up, and get ready to dominate the Summer Gaming Showdown!",
+      "price": "$50.00",
+      "place": "Online",
+      "date": "August 15-17, 2023",
+      "team_member": "Teams of 5",
+      "rules": [
+        "Participants must be 18 years or older.",
+        "Teams of 5 players each.",
+        "Double-elimination format.",
+        "Standard FPS game rules apply.",
+        "No cheating or exploiting glitches.",
+        "Respect fellow gamers and organizers."
+      ]
+    },
+    {
+      "id": 2,
+      "event_name": "Epic Strategy Clash",
+      "image": "https://i.ibb.co/H4Sc3by/card2.jpg",
+      "description": "Prepare for the most Epic Strategy Clash in the world of Real-Time Strategy (RTS) gaming. Command armies, build empires, and outwit your opponents in this intense RTS tournament. From resource management to tactical maneuvers, this event will challenge your strategic thinking like never before. With a prize pool of $45,000, only the most cunning strategists will emerge victorious. Join us for Epic Strategy Clash and lead your civilization to glory!",
+      "price": "$45.00",
+      "place": "Online",
+      "date": "September 5-7, 2023",
+      "team_member": "Individual",
+      "rules": [
+        "Participants of all ages are welcome.",
+        "Individual competition.",
+        "Round-robin group stage followed by single-elimination playoffs.",
+        "Fair play and sportsmanship are expected.",
+        "No use of unauthorized game modifications.",
+        "Respect opponents and event staff."
+      ]
+    },
+    {
+      "id": 3,
+      "event_name": "Battle Arena Mayhem",
+      "image": "https://i.ibb.co/xm1NVL6/card3.jpg",
+      "description": "Get ready for Battle Arena Mayhem, where the most skilled warriors face off in the Multiplayer Online Battle Arena (MOBA) Tournament of the year. Choose your hero, master their abilities, and coordinate with your team to claim victory. With a prize pool of $55,000, the competition is fierce. Will you rise as the ultimate MOBA champion and be celebrated as a gaming legend? Join Battle Arena Mayhem and unleash your strategic prowess!",
+      "price": "$55.00",
+      "place": "Online",
+      "date": "October 10-12, 2023",
+      "team_member": "Teams of 3",
+      "rules": [
+        "Open to participants aged 16 and above.",
+        "Teams of 3 players each.",
+        "Round-robin group stage with top teams advancing to playoffs.",
+        "Adherence to in-game MOBA rules and ethics.",
+        "No unauthorized software or hacks allowed.",
+        "Respect for teammates and opponents is mandatory."
+      ]
+    },
+    {
+      "id": 4,
+      "event_name": "Fantasy Quest Challenge",
+      "image": "https://i.ibb.co/vh00s2F/card4.jpg",
+      "description": "Embark on a grand adventure in the Fantasy Quest Challenge, a Role-Playing Game (RPG) Tournament like no other. Dive into immersive worlds, create epic characters, and embark on heroic journeys. Whether you prefer slaying dragons or solving mysteries, this tournament has an RPG for you. With a prize pool of $40,000, become the hero you've always dreamed of in the Fantasy Quest Challenge!",
+      "price": "$40.00",
+      "place": "Online",
+      "date": "November 14-16, 2023",
+      "team_member": "Individual",
+      "rules": [
+        "Participants must be 18 years or older.",
+        "Individual competition.",
+        "Diverse RPG game selection.",
+        "Adherence to in-game and event rules.",
+        "No use of exploits or cheats.",
+        "Respect for fellow participants and organizers."
+      ]
+    },
+    {
+      "id": 5,
+      "event_name": "Sports Simulation Showdown",
+      "image": "https://i.ibb.co/pd5xHH5/card5.jpg",
+      "description": "Experience the thrill of virtual sports in the Sports Simulation Showdown. Compete in realistic sports simulations, from soccer to basketball and more. Sharpen your skills, make incredible plays, and score big in this high-stakes tournament. With a prize pool of $35,000, sports enthusiasts can't afford to miss the Sports Simulation Showdown. Get in the game and aim for victory!",
+      "price": "$35.00",
+      "place": "Online",
+      "date": "December 5-7, 2023",
+      "team_member": "Individual",
+      "rules": [
+        "Open to participants of all ages.",
+        "Individual competition.",
+        "Various sports simulations featured.",
+        "Fair play and sportsmanship are expected.",
+        "No use of third-party controllers or devices.",
+        "Respect for opponents and event officials."
+      ]
+    },
+    {
+      "id": 6,
+      "event_name": "Indie Game Expo",
+      "image": "https://i.ibb.co/RBct4fZ/card6.jpg",
+      "description": "Discover the world of indie gaming at the Indie Game Expo. Immerse yourself in the creativity of independent game developers as they showcase their unique creations. From innovative gameplay to captivating storytelling, these indie gems have it all. Join us for an unforgettable gaming experience filled with demos, Q&A sessions, and exclusive previews. With an affordable entry fee of $25, the Indie Game Expo is your chance to support indie developers and be among the first to play the next big hits in the gaming world.",
+      "price": "$25.00",
+      "place": "Physical Event Location",
+      "date": "February 18-20, 2024",
+      "team_member": "Individual",
+      "rules": [
+        "All ages are welcome to participate.",
+        "Individual competition for indie game enthusiasts.",
+        "Respect for indie developers and fellow attendees.",
+        "No unauthorized recording or distribution of games.",
+        "Adherence to event schedule and guidelines.",
+        "Support indie developers and have fun!"
+      ]
+    }
+  ]
+  

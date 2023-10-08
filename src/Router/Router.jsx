@@ -6,6 +6,7 @@ import Login from "../Pages/Log/Login/Login";
 import Register from "../Pages/Log/Register/Register";
 import Profile from "../Components/Profile/Profile";
 import Service from "../Pages/Service/Service";
+import Games from "../Pages/Games/Games";
 
 
 const Router = createBrowserRouter([
@@ -31,9 +32,14 @@ const Router = createBrowserRouter([
                 element:<Profile></Profile>
             },
             {
+                path:'/games',
+                element:<Games></Games>
+            },
+            {
                 path:'/services',
                 element:<Service></Service>
-            }
+            },
+            
         ]
     }
 ])

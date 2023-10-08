@@ -17,9 +17,21 @@ const Fetures = () => {
         titleHead:'Exhibitions',
         titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
     }
+    const title3={
+        titleHead:'Tournaments',
+        titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
+    }
+    const title4={
+        titleHead:'Our Events',
+        titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
+    }
  
     return (
         <>
+            <Title title={title4}></Title>
+            <Feature5></Feature5>
+
+
             <Title title={title1}></Title>
             <Feature1></Feature1>
 
@@ -32,7 +44,7 @@ const Fetures = () => {
             <Feature3></Feature3>
 
 
-            <Title title={title1}></Title>
+            <Title title={title3}></Title>
             <Feature4></Feature4>
 
 
