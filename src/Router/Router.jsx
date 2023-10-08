@@ -7,6 +7,7 @@ import Register from "../Pages/Log/Register/Register";
 import Profile from "../Components/Profile/Profile";
 import Service from "../Pages/Service/Service";
 import Games from "../Pages/Games/Games";
+import Event from "../Pages/Events/Event";
 
 
 const Router = createBrowserRouter([
@@ -17,7 +18,9 @@ const Router = createBrowserRouter([
         children:[
             {
                 path:'/',
+                loader:()=>fetch('/services.json'),
                 element:<Home></Home>
+                
             },
             {
                 path:'/login',
@@ -39,6 +42,11 @@ const Router = createBrowserRouter([
                 path:'/services',
                 element:<Service></Service>
             },
+            {
+                path:'/event/:id',
+                element:<Event></Event>,
+                loader:()=>fetch('/services.json')
+            }
             
         ]
     }

@@ -5,9 +5,9 @@ import Feature3 from "./Feature3";
 import Feature4 from "./Feature4";
 import Feature5 from "./Feature5";
 import Feature6 from "./Feature6";
+import PropTypes from 'prop-types';
 
-
-const Fetures = () => {
+const Fetures = ({events}) => {
     
     const title1={
         titleHead:'Tech Conferences and Expos',
@@ -29,7 +29,7 @@ const Fetures = () => {
     return (
         <>
             <Title title={title4}></Title>
-            <Feature5></Feature5>
+            <Feature5 events={events}></Feature5>
 
 
             <Title title={title1}></Title>
@@ -64,3 +64,7 @@ const Fetures = () => {
 };
 
 export default Fetures;
+
+Fetures.propTypes = {
+    events:PropTypes.array.isRequired
+}
