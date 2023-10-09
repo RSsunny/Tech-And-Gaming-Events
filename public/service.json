@@ -1,0 +1,83 @@
+[
+    {
+      "serviceName": "Event Hosting",
+      "description": "We provide comprehensive event hosting services for gaming tournaments, ensuring seamless organization, technical support, and an engaging experience for participants and viewers.",
+      "image": "https://i.ibb.co/1J2Gwkp/event-hosting.jpg"
+    },
+    {
+      "serviceName": "Live Streaming",
+      "description": "Elevate your gaming events with professional live streaming services. We offer high-quality streams, commentary, and interactive features to engage your audience.",
+      "image": "https://i.ibb.co/CMKtjZ9/live-streaming.jpg"
+    },
+    {
+      "serviceName": "Tournament Organization",
+      "description": "Let us handle the logistics of your gaming tournaments. From bracket creation to rule enforcement, we ensure fair and exciting competitions.",
+      "image": "https://i.ibb.co/xm1NVL6/card3.jpg"
+    },
+    {
+      "serviceName": "Prize Management",
+      "description": "Ensure attractive prizes for your gaming events with our prize management services. We source, distribute, and handle prize logistics for winners.",
+      "image": "https://i.ibb.co/2sZx3S3/prize-management.jpg"
+    },
+    {
+      "serviceName": "Technical Support",
+      "description": "Our dedicated technical support team ensures that your gaming events run smoothly. We handle server management, connectivity issues, and more.",
+      "image": "https://i.ibb.co/JHn03FW/technical-support.jpg"
+    },
+    {
+      "serviceName": "Customized Merchandise",
+      "description": "Boost event engagement with custom merchandise. We design and produce branded gaming merchandise, from t-shirts to accessories.",
+      "image": "https://i.ibb.co/jfZLNY6/custom-merchandise.jpg"
+    },
+    {
+      "serviceName": "Professional Commentators",
+      "description": "Add excitement to your gaming events with professional commentators who provide insightful analysis and keep the audience engaged.",
+      "image": "https://i.ibb.co/0f6c9mw/professional-commentators.jpg"
+    },
+    {
+      "serviceName": "Gaming Equipment Rental",
+      "description": "Rent high-quality gaming equipment for your events, including gaming PCs, consoles, monitors, and peripherals.",
+      "image": "https://i.ibb.co/Ky0Qz0D/gaming-equipment-rental.jpg"
+    },
+    {
+      "serviceName": "Venue Selection",
+      "description": "Choose the perfect venue for your gaming events with our venue selection services. We consider capacity, location, and technical requirements.",
+      "image": "https://i.ibb.co/8rKJ3xn/venue-selection.jpg"
+    },
+    {
+      "serviceName": "Event Marketing",
+      "description": "Promote your gaming events effectively with our event marketing services, including social media campaigns, advertising, and influencer partnerships.",
+      "image": "https://i.ibb.co/r42xK2g/event-marketing.jpg"
+    },
+    {
+      "serviceName": "Security and Safety",
+      "description": "Ensure the safety of participants and attendees with our security measures, including access control, medical assistance, and emergency plans.",
+      "image": "https://i.ibb.co/whfRZGr/security-and-safety.jpg"
+    },
+    {
+      "serviceName": "Cosplay Contest Management",
+      "description": "Host epic cosplay contests alongside your gaming events. We manage the contest, judges, and prizes for the best cosplayers.",
+      "image": "https://i.ibb.co/mSfJXb7/cosplay-contest-management.jpg"
+    },
+    {
+      "serviceName": "VR Gaming Experience",
+      "description": "Offer a cutting-edge VR gaming experience at your events. We provide VR equipment, games, and technical support.",
+      "image": "https://i.ibb.co/61dBWv9/vr-gaming-experience.jpg"
+    },
+    {
+      "serviceName": "Community Building",
+      "description": "Foster a strong gaming community around your events with our community building services, including forums, social groups, and meetups.",
+      "image": "https://i.ibb.co/ZMSzWMX/community-building.jpg"
+    },
+    {
+      "serviceName": "Sponsorship Management",
+      "description": "Secure sponsorships to fund and enhance your gaming events. We handle sponsorship negotiations, branding, and activation.",
+      "image": "https://i.ibb.co/W2hv0Mv/sponsorship-management.jpg"
+    },
+    {
+      "serviceName": "AI-Powered Analytics",
+      "description": "Leverage AI-powered analytics to gain insights into player behavior, engagement, and event performance for data-driven decisions.",
+      "image": "https://i.ibb.co/JvG6fbp/ai-powered-analytics.jpg"
+    }
+  ]
+  

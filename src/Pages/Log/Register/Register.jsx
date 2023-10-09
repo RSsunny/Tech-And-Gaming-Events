@@ -35,7 +35,6 @@ const Register = () => {
         }
         createUser(email,password)
             .then(result=>{
-               
                 updateProfile(result.user,{
                     displayName : name
                     

@@ -65,12 +65,11 @@ const Slider = () => {
                 <div className="absolute inset-0 bg-black opacity-60"></div>
                 <div className="absolute inset-0  text-white flex justify-between items-center max-w-7xl mx-auto px-5 lg:px-20 ">
                         <div className="" data-aos ="fade-right" data-aos-mirror="true" data-aos-delay="100">
-                            {/* <h1 className="text-4xl font-babas font-bold text-white">The Best <span className="text-primary">Vedio Games</span>  Out There</h1> */}
                             {
                                 text
                             }
                             <p className=" md:w-[400px] text-sm my-3" data-aos-duration="3000">Gaming is playing an electronic video game, which is often done on a dedicated gaming console, PC or smartphone. People who often play video games are called gamers.</p>
-                            <div className="px-4 py-3 bg-secondary inline-block rounded-full cursor-pointer  hover:bg-opacity-80 my-4">
+                            <div className="px-4 py-3 bg-secondary inline-block rounded-full cursor-pointer  hover:bg-opacity-80  my-4">
                                 <Link to={'/blog'}>
                                 <div className="flex items-center gap-5 ">
                                 <h1>read more</h1>

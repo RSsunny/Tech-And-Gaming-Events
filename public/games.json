@@ -1,0 +1,199 @@
+[
+    {
+      "cardName": "Fireball",
+      "cardType": "Spell",
+      "cardDescription": "Launch a fiery projectile at your opponent, dealing 10 damage. Burn, baby, burn!",
+      "cardRarity": "Common",
+      "image": "https://i.ibb.co/xm1NVL6/card3.jpg"
+    },
+    {
+      "cardName": "Thunderstrike",
+      "cardType": "Spell",
+      "cardDescription": "Summon a bolt of lightning to smite your foe. It deals 15 damage and leaves them stunned.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/H4Sc3by/card2.jpg"
+    },
+    {
+      "cardName": "Goblin Grunt",
+      "cardType": "Minion",
+      "cardDescription": "A lowly goblin warrior with a rusty sword. He may be weak, but he's eager to serve.",
+      "cardRarity": "Common",
+      "image": "https://i.ibb.co/wdk0tKH/card1.jpg"
+    },
+    {
+      "cardName": "Dragon's Breath",
+      "cardType": "Spell",
+      "cardDescription": "Unleash the fiery breath of a dragon on your enemy. It burns for 20 damage over 3 turns.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/VvYW6rb/bg2.jpg"
+    },
+    {
+      "cardName": "Elven Archer",
+      "cardType": "Minion",
+      "cardDescription": "A skilled elven archer with a keen eye. She deals 8 damage with her precise shots.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/GxHyMPg/bg6.jpg"
+    },
+    {
+      "cardName": "Stone Golem",
+      "cardType": "Minion",
+      "cardDescription": "A massive golem made of enchanted stones. It has 40 health and deals 12 damage.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/7z0gJ1K/bg3.jpg"
+    },
+    {
+      "cardName": "Healing Potion",
+      "cardType": "Item",
+      "cardDescription": "Recover 15 health points with this magical elixir. A lifesaver in dire situations.",
+      "cardRarity": "Common",
+      "image": "https://i.ibb.co/S3jPbN3/wallpaperflare-com-wallpaper-7.jpg"
+    },
+    {
+      "cardName": "Ice Barrier",
+      "cardType": "Spell",
+      "cardDescription": "Summon an icy shield to block incoming attacks. Absorbs 20 damage.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/vh00s2F/card4.jpg"
+    },
+    {
+      "cardName": "Necromancer",
+      "cardType": "Minion",
+      "cardDescription": "A dark sorcerer who can raise undead minions. He deals 10 damage and can revive fallen allies.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/pd5xHH5/card5.jpg"
+    },
+    {
+      "cardName": "Phoenix Feather",
+      "cardType": "Item",
+      "cardDescription": "Harness the power of a phoenix feather to resurrect yourself once if you fall in battle.",
+      "cardRarity": "Legendary",
+      "image": "https://i.ibb.co/RBct4fZ/card6.jpg"
+    },
+    {
+      "cardName": "Sneaky Rogue",
+      "cardType": "Minion",
+      "cardDescription": "A stealthy rogue with a deadly dagger. He deals 6 damage and can strike from the shadows.",
+      "cardRarity": "Common",
+      "image": "https://i.ibb.co/Tv1Jc36/bg7.jpg"
+    },
+    {
+      "cardName": "Holy Light",
+      "cardType": "Spell",
+      "cardDescription": "Invoke the holy light to heal yourself or an ally for 15 health points.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/xLpfmC4/sadshah-c-R0b-LCSp-Gfw-unsplash.jpg"
+    },
+    {
+      "cardName": "Ancient Wyrm",
+      "cardType": "Minion",
+      "cardDescription": "A legendary dragon with immense power. It has 50 health and deals 25 damage.",
+      "cardRarity": "Legendary",
+      "image": "https://i.ibb.co/sHpJKqh/game-7.jpg"
+    },
+    {
+      "cardName": "Sword of Justice",
+      "cardType": "Item",
+      "cardDescription": "Equip this enchanted sword to increase your minion's attack by 5 points.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/L5NGwFR/game4.jpg"
+    },
+    {
+      "cardName": "Forest Guardian",
+      "cardType": "Minion",
+      "cardDescription": "A mystical protector of the forest. It has 30 health and deals 8 damage.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/n0ZSqmf/game3.jpg"
+    },
+    {
+      "cardName": "Inferno",
+      "cardType": "Spell",
+      "cardDescription": "Summon a raging inferno to engulf your enemies. It deals 30 damage over 3 turns.",
+      "cardRarity": "Legendary",
+      "image": "https://i.ibb.co/DYcCgFK/gmae2.jpg"
+    },
+    {
+      "cardName": "Mystic Healer",
+      "cardType": "Minion",
+      "cardDescription": "A wise healer with magical abilities. She can restore 20 health to you or an ally.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/hZzbL0n/game-5.jpg"
+    },
+    {
+      "cardName": "Shadow Assassin",
+      "cardType": "Minion",
+      "cardDescription": "A deadly assassin concealed in the shadows. He deals 12 damage and has stealth.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/zn2R2K9/game6.jpg"
+    },
+    {
+      "cardName": "Amulet of Protection",
+      "cardType": "Item",
+      "cardDescription": "Wear this enchanted amulet to reduce incoming damage by 50% for one turn.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/BnLFdxT/gmae1.jpg"
+    },
+    {
+      "cardName": "Stormcaller",
+      "cardType": "Minion",
+      "cardDescription": "A mage who can control the elements. He deals 18 damage and can call down lightning.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/XxbLhHk/bg1.jpg"
+    },
+    {
+      "cardName": "Vampiric Dagger",
+      "cardType": "Item",
+      "cardDescription": "This dagger grants you lifesteal, allowing you to heal for 50% of the damage you deal.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/2yV0BcN/bg8.jpg"
+    },
+    {
+      "cardName": "Titanic Guardian",
+      "cardType": "Minion",
+      "cardDescription": "A colossal guardian of immense strength. It has 60 health and deals 20 damage.",
+      "cardRarity": "Legendary",
+      "image": "https://i.ibb.co/s67x8MP/bg9.jpg"
+    },
+    {
+      "cardName": "Time Warp",
+      "cardType": "Spell",
+      "cardDescription": "Bend time to your will, giving you an extra turn to strategize and take action.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/yV4w0RQ/bg4.jpg"
+    },
+    {
+      "cardName": "Enchanted Bow",
+      "cardType": "Item",
+      "cardDescription": "Equip this bow to increase your ranged damage by 10 points.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/vh00s2F/card4.jpg"
+    },
+    {
+      "cardName": "Phoenix Rebirth",
+      "cardType": "Spell",
+      "cardDescription": "Invoke the power of the phoenix to resurrect all fallen allies with full health.",
+      "cardRarity": "Legendary",
+      "image": "https://i.ibb.co/S3jPbN3/wallpaperflare-com-wallpaper-7.jpg"
+    },
+    {
+      "cardName": "Dwarven Miner",
+      "cardType": "Minion",
+      "cardDescription": "A skilled miner with a pickaxe. He deals 7 damage and can uncover valuable resources.",
+      "cardRarity": "Common",
+      "image": "https://i.ibb.co/pd5xHH5/card5.jpg"
+    },
+    {
+      "cardName": "Aegis Shield",
+      "cardType": "Item",
+      "cardDescription": "Equip this shield to gain a temporary shield that absorbs 30 damage from incoming attacks.",
+      "cardRarity": "Rare",
+      "image": "https://i.ibb.co/S3jPbN3/wallpaperflare-com-wallpaper-7.jpg"
+    },
+    {
+      "cardName": "Ice Queen",
+      "cardType": "Minion",
+      "cardDescription": "A powerful ice sorceress who can freeze enemies. She deals 20 damage and slows foes.",
+      "cardRarity": "Epic",
+      "image": "https://i.ibb.co/S3jPbN3/wallpaperflare-com-wallpaper-7.jpg"
+    }
+  ]
+  

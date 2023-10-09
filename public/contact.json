@@ -1,0 +1,60 @@
+{
+    "contactInformation": {
+      "companyName": "Your Company Name",
+      "description": "We are a leading provider of innovative solutions in the tech industry.",
+      "address": "123 Main Street",
+      "city": "Anytown",
+      "state": "CA",
+      "zipCode": "12345",
+      "contacts": [
+        {
+          "email": "contact@yourcompany.com",
+          "phone": "+1 (555) 123-4567"
+        },
+        {
+          "email": "support@yourcompany.com",
+          "phone": "+1 (555) 987-6543"
+        },
+        {
+          "email": "sales@yourcompany.com",
+          "phone": "+1 (555) 456-7890"
+        },
+        {
+          "email": "info@yourcompany.com",
+          "phone": "+1 (555) 234-5678"
+        }
+      ],
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourcompany",
+        "twitter": "https://www.twitter.com/yourcompany",
+        "instagram": "https://www.instagram.com/yourcompany",
+        "linkedin": "https://www.linkedin.com/company/yourcompany"
+      },
+      "images": {
+        "image1": "https://i.ibb.co/xm1NVL6/card3.jpg",
+        "image2": "https://i.ibb.co/wdk0tKH/card1.jpg",
+        "image3": "https://i.ibb.co/H4Sc3by/card2.jpg",
+        "image4": "https://i.ibb.co/VvYW6rb/bg2.jpg",
+        "image5": "https://i.ibb.co/7z0gJ1K/bg3.jpg"
+      }
+    },
+    "gameEvents": [
+      {
+        "eventName": "Epic Clash Tournament",
+        "eventDescription": "Embark on a quest through mythical realms, battling legendary creatures and uncovering ancient mysteries. From the depths of the ocean to the peaks of towering mountains, the journey will challenge your bravery and intellect. Will you emerge as a hero of legend?"
+      },
+      {
+        "eventName": "Lost Relics Expedition",
+        "eventDescription": "Embark on a quest through mythical realms, battling legendary creatures and uncovering ancient mysteries. From the depths of the ocean to the peaks of towering mountains, the journey will challenge your bravery and intellect. Will you emerge as a hero of legend?"
+      },
+      {
+        "eventName": "Apocalypse Survival Challenge",
+        "eventDescription": "Embark on a quest through mythical realms, battling legendary creatures and uncovering ancient mysteries. From the depths of the ocean to the peaks of towering mountains, the journey will challenge your bravery and intellect. Will you emerge as a hero of legend?"
+      },
+      {
+        "eventName": "Mythical Odyssey Quest",
+        "eventDescription": "Embark on a quest through mythical realms, battling legendary creatures and uncovering ancient mysteries. From the depths of the ocean to the peaks of towering mountains, the journey will challenge your bravery and intellect. Will you emerge as a hero of legend?"
+      }
+    ]
+}
+  

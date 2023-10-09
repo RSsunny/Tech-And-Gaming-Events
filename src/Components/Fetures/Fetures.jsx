@@ -7,6 +7,7 @@ import Feature5 from "./Feature5";
 import Feature6 from "./Feature6";
 import PropTypes from 'prop-types';
 import bgcover from '../../assets/bg1.jpg'
+import Feature7 from "./Feature7";
 
 const Fetures = ({events}) => {
     
@@ -14,12 +15,16 @@ const Fetures = ({events}) => {
         titleHead:'Tech Conferences and Expos',
         titleDescription:" You can have the chance to talk to them directly and learn more about the way they work, their benefits, and their expectations."
     }
-    // const title2={
-    //     titleHead:'Exhibitions',
-    //     titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
-    // }
+    const title2={
+        titleHead:'Apocalypse Survival Challenge',
+        titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
+    }
     const title3={
         titleHead:'Tournaments',
+        titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
+    }
+    const title6={
+        titleHead:'Our Team',
         titleDescription:" You can have the chance to have a look at the exhibitions that are going on in the city."
     }
     const title4={
@@ -33,12 +38,8 @@ const Fetures = ({events}) => {
             <Feature5 events={events}></Feature5>
 
             <div className="bg-cover bg-center" style={{backgroundImage:`url("${bgcover}")`}}>
-                
                 <Title title={title1}></Title>
                 <Feature1></Feature1>
-
-
-                {/* <Title title={title2}></Title> */}
                 <Feature2></Feature2>
             </div>
 
@@ -51,12 +52,12 @@ const Fetures = ({events}) => {
             <Feature4></Feature4>
 
 
-            <Title title={title1}></Title>
-            <Feature5></Feature5>
+            <Title title={title2}></Title>
+            <Feature7></Feature7>
 
 
 
-            <Title title={title1}></Title>
+            <Title title={title6}></Title>
             <Feature6></Feature6>
             
 

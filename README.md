@@ -1,8 +1,17 @@
-# React + Vite
+#Tech And Gaming Events
+##Rabius Suny
+## Learning (react)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+# Features:
+- Tech gaming event provide realistic events for clain sites .
+- Home page added AOS animation is very users friendly
+- custom json file format is very simple ChatGPt converts.
+- banner section scrolling 
+- login page and register page few animations added
+- Firebase authentication support 
+- user login logout and if froget password then click forget password chech your email.
+- Privet routes  addded becuse safty website .
