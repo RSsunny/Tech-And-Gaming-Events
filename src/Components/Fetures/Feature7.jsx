@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 import bg51 from "../../assets/bg1.jpg"
 import bg52 from "../../assets/bg2.jpg"
 import bg53 from "../../assets/bg3.jpg"
@@ -9,6 +9,7 @@ import bg57 from "../../assets/bg7.jpg"
 import bg58 from "../../assets/bg8.jpg"
 
 const Feature7 = () => {
+    
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto px-2 gap-5 py-5">
             <div className="border bg-black bg-opacity-10  rounded-md ">
@@ -18,7 +19,7 @@ const Feature7 = () => {
                 <div className="p-2 pb-5">
                     <h1 className="text-xl font-babas font-medium my-3">Wild West Duels: Card Outlaws</h1>
                     <p className="mb-5 text-xs">Join the epic showdown! Compete against players worldwide in our grand tournament for glory and fantastic prizes!</p>
-                    <Link to={'/blog'} className="text-xs px-4 py-2  rounded-full bg-primary text-white hover:bg-secondary duration-300">Show details</Link>
+                    <Link to={'/blog'}  className="text-xs px-4 py-2  rounded-full bg-primary text-white hover:bg-secondary duration-300">Show details</Link>
                 </div>
             </div>
             <div className="border bg-black bg-opacity-10  rounded-md ">
