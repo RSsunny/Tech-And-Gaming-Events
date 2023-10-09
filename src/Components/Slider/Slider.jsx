@@ -63,8 +63,8 @@ const Slider = () => {
             <SwiperSlide>
                 <div className="relative w-full h-screen bg-center bg-cover" style={{backgroundImage:`url("${bgImage}")`}}>
                 <div className="absolute inset-0 bg-black opacity-60"></div>
-                <div className="absolute inset-0  text-white flex justify-between items-center max-w-7xl mx-auto px-5 lg:px-20 ">
-                        <div className="" data-aos ="fade-right" data-aos-mirror="true" data-aos-delay="100">
+                <div className="absolute inset-0  text-white flex justify-between items-center max-w-7xl mx-auto px-5 lg:px-20  overflow-hidden">
+                        <div className="overflow-hidden" data-aos ="fade-right" data-aos-mirror="true" data-aos-delay="100">
                             {
                                 text
                             }

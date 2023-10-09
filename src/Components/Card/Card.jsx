@@ -32,7 +32,7 @@ const Card = ({eventCard}) => {
 
     },[])
     return (
-        <div>
+        <div className="overflow-hidden">
             <div className="relative bg-cover bg-center h-[400px] " style={{backgroundImage:`url(${image})`}}>
                 <div className="absolute inset-0 bg-black  opacity-40 "></div>
                 <div className="absolute inset-0 text-white font-robato text-xl font-bold pl-2 overflow-hidden" data-aos ="fade-right" data-aos-mirror="true" data-aos-delay="100">

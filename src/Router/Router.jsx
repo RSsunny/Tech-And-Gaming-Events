@@ -44,7 +44,8 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/services',
-                element:<Service></Service>
+                element:<Privetroute><Service></Service></Privetroute>,
+                loader:()=>fetch('/service.json')
             },
             {
                 path:'/event/:id',

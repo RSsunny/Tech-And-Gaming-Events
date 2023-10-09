@@ -4,21 +4,13 @@ import Footer from "../../Components/Footer/Footer";
 
 const Contact = () => {
     const info=useLoaderData()
-    console.log(info.contactInformation);
-    const {address,city,companyName,contacts,description,images,socialLinks,state,zipCode,
-
-
-
-
-
-
-    }=info.contactInformation
+    const {address,city,companyName,contacts,description,images,socialLinks,state,zipCode,}=info.contactInformation
     return (
        < >
         <div className="bg-cover bg-center w-full h-[400px]" style={{backgroundImage:`url("${images.image3}")`}}></div>
         <div className="max-w-7xl mx-auto px-5">
             <div>
-                <h1 className="text-5xl font-bold text-center my-5">{companyName}</h1>
+                <h1 className="text-xl md:text-5xl font-bold text-center my-5">{companyName}</h1>
                 <p className="text-center md:w-[700px] mx-auto">{description}</p>
             </div>
             <h1 className="text-2xl font-bold text-center mt-10 mb-5">Our Information</h1>
@@ -34,7 +26,7 @@ const Contact = () => {
                     }
                 </p>
 
-               <div className="flex gap-5 text-xl font-bold"> 
+               <div className="flex flex-col md:flex-row text-green-500 mt-5 gap-2 md:gap-5 text-xl font-bold"> 
                     <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">instagram</a>
                     <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">linkedin</a>

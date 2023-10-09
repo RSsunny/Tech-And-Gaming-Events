@@ -16,8 +16,8 @@ const Feature3 = () => {
         <h1 className="text-3xl font-press mt-5 font-bold">Recent Games</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto px-5 my-10 ">
-            <div data-aos ="fade-right" data-aos-mirror="true"  >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto px-5 my-10 overflow-hidden">
+            <div className="overflow-hidden" data-aos ="fade-right" data-aos-mirror="true"  >
                 <div className="relative bg-gray-400 bg-opacity-10 cursor-pointer hover:scale-110 duration-500">
                     <div className="overflow-hidden h-[200px]">
                     <img className="hover:scale-125 duration-500 h-full" src={img1} alt="" />
@@ -33,7 +33,7 @@ const Feature3 = () => {
 
                 </div>
             </div>
-            <div data-aos ="fade-up" data-aos-mirror="true" >
+            <div className="overflow-hidden" data-aos ="fade-up" data-aos-mirror="true" >
                 <div className="relative bg-gray-400 bg-opacity-10 cursor-pointer hover:scale-110 duration-500">
                     <div className="overflow-hidden h-[200px]">
                     <img className="hover:scale-125 duration-500  h-full" src={img3} alt="" />
@@ -49,7 +49,7 @@ const Feature3 = () => {
 
                 </div>
             </div>
-            <div data-aos ="fade-left" data-aos-mirror="true" >
+            <div className="overflow-hidden" data-aos ="fade-left" data-aos-mirror="true" >
                 <div className="relative bg-gray-400 bg-opacity-10 cursor-pointer hover:scale-110 duration-500">
                     <div className="overflow-hidden h-[200px]">
                     <img className="hover:scale-125 duration-500 h-full" src={img2} alt="" />
