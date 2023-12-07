@@ -1,6 +1,6 @@
 #Tech And Gaming Events
 ##Rabius Suny
-## Learning (react)
+## Live link : https://tourmaline-druid-a07caa.netlify.app/
 
 
 
