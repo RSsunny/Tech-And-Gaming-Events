@@ -9,6 +9,7 @@
 - react-hook-from
 - AOS
 - Material Tailwind
+- Firebase
   
 
 
