@@ -3,7 +3,13 @@
 ## Live link : https://tourmaline-druid-a07caa.netlify.app/
 
 
-
+# technology
+- TanstacQuery
+- Axios
+- react-hook-from
+- AOS
+- Material Tailwind
+  
 
 
 # Features:
